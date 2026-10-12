@@ -1,0 +1,8 @@
+node_modules
+.env
+.npm-cache
+.verification
+test
+docs
+.git
+*.log

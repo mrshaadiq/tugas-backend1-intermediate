@@ -1,0 +1,15 @@
+{
+  "name": "app-calendar-assignment-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js",
+    "demo": "node scripts/demo.mjs",
+    "demo:persistence": "node scripts/demo.mjs --recreate"
+  },
+  "dependencies": { "pg": "^8.16.3" },
+  "devDependencies": { "pg-mem": "^3.0.5" }
+}
