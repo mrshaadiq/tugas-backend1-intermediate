@@ -93,17 +93,6 @@ docker compose logs backend db
 
 Tes default menggunakan emulator SQL `pg-mem` untuk memeriksa API dan query, bukan bukti persistensi Docker. Demo persistensi di atas menguji PostgreSQL container nyata. Jika password `.env` diganti setelah volume terisi, akun database lama tetap memakai password sebelumnya; gunakan kembali kredensial awal untuk volume itu. `docker compose down` menghentikan service dan mempertahankan named volume.
 
-## Alur video maksimal 10 menit
-
-1. Menit 0-1: perkenalkan proyek, fitur, dan bagian yang dikerjakan sendiri.
-2. Menit 1-3: jelaskan Dockerfile, dua service Compose, environment, port, jaringan, dan volume.
-3. Menit 3-5: tampilkan build, status service, dan healthcheck.
-4. Menit 5-7: tambah tugas lewat API lalu baca kembali.
-5. Menit 7-9: buat ulang container, perlihatkan ID container berubah, lalu baca data dengan ID yang sama.
-6. Menit 9-10: jelaskan README dan cara menjalankan ulang.
-
-Pastikan output terminal dan suara jelas. Bukti build perlu terlihat; jangan hanya menampilkan service yang sudah berjalan.
-
 ## Referensi dan bantuan
 
 - Konsep fitur: APP Calendar milik proyek ini. Implementasi demo dibuat khusus untuk tugas.
@@ -113,9 +102,3 @@ Pastikan output terminal dan suara jelas. Bukti build perlu terlihat; jangan han
 - [Docker Compose startup order](https://docs.docker.com/compose/how-tos/startup-order/).
 - [Docker Compose networking](https://docs.docker.com/compose/how-tos/networking/).
 - [Docker Compose volumes](https://docs.docker.com/reference/compose-file/volumes/).
-
-## Pengumpulan
-
-Repository tugas: https://github.com/mrshaadiq/tugas-backend1-intermediate. Pastikan repository public dan bisa diakses mentor. Sertakan source, Dockerfile, Compose, lockfile, README, dan `.env.example`; jangan unggah `.env`, node_modules, atau data database lokal. Repository dan video YouTube public/unlisted harus bisa dibuka tanpa login.
-
-PDF pengumpulan cukup berisi nama, NIM, judul, link repository, dan link video. Nama file: `Tugas1_BackendIntermediate_Nama_NIM.pdf`. Deadline sesuai dokumen: Kamis 15 Oktober 2026 pukul 23.25 WIB.
