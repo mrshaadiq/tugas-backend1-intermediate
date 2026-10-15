@@ -8,7 +8,7 @@ API menyimpan judul dan deskripsi tugas ke PostgreSQL. Dockerfile membangun imag
 
 - Docker Desktop berjalan dengan Linux containers dan Docker Compose v2 yang mendukung `--wait`.
 - Node.js 24 dan npm hanya diperlukan untuk tes dan skrip demo. Menjalankan service melalui Docker tidak memerlukan instalasi Node lokal.
-- Jalankan semua perintah berikut dari folder ini, bukan root aplikasi Expo.
+- Jalankan semua perintah berikut dari folder root repository ini.
 - Backend demo tidak memakai login. Gunakan data contoh di komputer lokal; port API hanya dipublikasikan pada `127.0.0.1`.
 
 ## Menjalankan
