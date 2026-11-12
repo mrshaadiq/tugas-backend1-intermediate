@@ -4,12 +4,12 @@ import {fileURLToPath} from 'node:url';
 import {readFile} from 'node:fs/promises';
 
 const cwd = fileURLToPath(new URL('../', import.meta.url));
-let appPort = '3000';
+let appPort = '8080';
 try {
   const env = await readFile(new URL('../.env', import.meta.url), 'utf8');
   appPort = /^APP_PORT\s*=\s*(\d+)\s*$/m.exec(env)?.[1] || appPort;
 } catch {}
-const baseUrl = process.env.DEMO_URL || `http://127.0.0.1:${appPort}`;
+const baseUrl = process.env.DEMO_URL || `http://127.0.0.1:${appPort}/api`;
 const recreate = process.argv.includes('--recreate');
 
 function compose(args, capture = false) {
